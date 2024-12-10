@@ -1,0 +1,41 @@
+@url = http://localhost:3000
+
+###
+
+
+GET {{url}}/mascota
+
+###
+GET {{url}}/mascota/porId/888
+
+
+###
+
+
+POST {{url}}/mascota/agregar
+Content-Type: application/json
+
+{
+    "nombre": "laura",
+    "edad": 2,
+    "raza": "snauser",
+    "sexo": "Hembra"
+}
+
+
+###
+
+
+PUT {{url}}/gatito/actualizar/999
+Content-Type: application/json
+
+{
+    "nombre": "Luna",
+    "edad": 4,
+    "raza": "Snauser",
+    "sexo": "Hembra"
+}
+
+###
+
+DELETE {{url}}/mascota/delete/777

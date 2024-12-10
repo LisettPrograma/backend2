@@ -1,0 +1,65 @@
+@url = http://localhost:3000
+
+###
+
+
+GET {{url}}/gatito
+
+###
+GET {{url}}/gatito/porId/67564c8d18e90708769a8708
+
+
+###
+
+
+POST {{url}}/gatito/agregar
+Content-Type: application/json
+
+{
+    "nombre": "lorenzo",
+    "edad": 6,
+    "raza": "Egipcia",
+    "sexo": "Macho"
+}
+
+
+###
+
+POST {{url}}/gatito/agregar
+Content-Type: application/json
+
+{
+    "nombre": "lisst",
+    "edad": 2,
+    "raza": "Angora",
+    "sexo": "Macho"
+}
+
+###
+
+POST {{url}}/gatito/agregar
+Content-Type: application/json
+
+{
+    "nombre": "pedro",
+    "edad": 4,
+    "raza": "Naranja",
+    "sexo": "Macho"
+}
+
+###
+
+
+PUT {{url}}/gatito/actualizar/67564c8d18e90708769a8708
+Content-Type: application/json
+
+{
+    "nombre": "Pepe",
+    "edad": 4,
+    "raza": "Siames",
+    "sexo": "Macho"
+}
+
+###
+
+DELETE {{url}}/gatito/delete/67564c8d18e90708769a8708
