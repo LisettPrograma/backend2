@@ -115,6 +115,7 @@ packages/
 
 # Rider plugin folder
 .idea/
+.env
 
 # Coverage files
 *.coverage
