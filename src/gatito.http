@@ -6,7 +6,8 @@
 GET {{url}}/gatito
 
 ###
-GET {{url}}/gatito/porId/67564c8d18e90708769a8708
+GET {{url}}/gatito/porId/1
+# GET {{url}}/gatito/porId/67564c8d18e90708769a8708
 
 
 ###
@@ -15,7 +16,14 @@ GET {{url}}/gatito/porId/67564c8d18e90708769a8708
 POST {{url}}/gatito/agregar
 Content-Type: application/json
 
+# {
+#     "nombre": "lorenzo",
+#     "edad": 6,
+#     "raza": "Egipcia",
+#     "sexo": "Macho"
+# }
 {
+    "id" : 3,
     "nombre": "lorenzo",
     "edad": 6,
     "raza": "Egipcia",
@@ -28,7 +36,14 @@ Content-Type: application/json
 POST {{url}}/gatito/agregar
 Content-Type: application/json
 
+# {
+#     "nombre": "lisst",
+#     "edad": 2,
+#     "raza": "Angora",
+#     "sexo": "Macho"
+# }
 {
+    "id" : 4,
     "nombre": "lisst",
     "edad": 2,
     "raza": "Angora",
@@ -40,8 +55,15 @@ Content-Type: application/json
 POST {{url}}/gatito/agregar
 Content-Type: application/json
 
+# {
+#     "nombre": "pedro",
+#     "edad": 4,
+#     "raza": "Naranja",
+#     "sexo": "Macho"
+# }
 {
-    "nombre": "pedro",
+    "id": 5,
+    "nombre": "Alberto",
     "edad": 4,
     "raza": "Naranja",
     "sexo": "Macho"
@@ -50,11 +72,13 @@ Content-Type: application/json
 ###
 
 
-PUT {{url}}/gatito/actualizar/67564c8d18e90708769a8708
+# PUT {{url}}/gatito/actualizar/67564c8d18e90708769a8708
+PUT {{url}}/gatito/actualizar/1
 Content-Type: application/json
 
 {
-    "nombre": "Pepe",
+    "id": 1,
+    "nombre": "Pedrito",
     "edad": 4,
     "raza": "Siames",
     "sexo": "Macho"
@@ -62,4 +86,4 @@ Content-Type: application/json
 
 ###
 
-DELETE {{url}}/gatito/delete/67564c8d18e90708769a8708
+DELETE {{url}}/gatito/delete/1
